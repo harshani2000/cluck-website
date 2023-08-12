@@ -35,28 +35,17 @@
     display: inline-block;
     margin: 0 10px;
     padding: 12px 0;
-    color: black;
-    border: .5px solid black;
+    color: white;
+    border: .5px solid white;
     position: relative;
     z-index: 1;
     transition: color 0.5s;
 }
-.banner-btn a span{
-    width: 0;
-    height: 100%;
-    position: absolute  ;
-    top: 0;
-    left: 0;
-    background: #fff;
-    z-index: -1;
-    transition: 0.5s;
-}
+
 .banner-btn a:hover{
-    width: 100%;
+    width: 30%;
 }
-.banner-btn a:hover{
-    color: #000;
-}
+
 #sideNav{
     width: 250px;
     height: 100vh;
@@ -94,11 +83,13 @@ nav ul li a{
 @media screen and (max-width:770px){
     .banner-text h1{
         font-size: 44px;
+    
+    }
     .banner-btn a{
         display: block;
         margin: 20px auto;
     }
-}}
+}
 
 /*--------------feature-----------*/
 #feature{
@@ -165,7 +156,7 @@ nav ul li a{
     font-weight: 200;
     font-size: 20px;
 }
-.feature-icon . fa{
+.feature-icon .fa{
     width: 50px;
     height: 50px;
     font-size: 30px;
@@ -189,7 +180,7 @@ nav ul li a{
     .features-img {
         flex-basis: 100%;
     }
-    ..features-img img{
+    .features-img img{
         width: 100%;
     }
 }
@@ -279,7 +270,7 @@ hr{
 }
 .footer-row{
     width: 100%;
-    margin top: 150px;
+    margin-top: 150px;
     padding: 100px 15%;
     display: flex;
     background: #727272;
@@ -292,6 +283,4 @@ hr{
     flex-basis: 85%;
     padding: 10px;
     margin-bottom: 20px;
-
-
 }
