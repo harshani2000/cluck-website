@@ -3,11 +3,42 @@
   padding: 0;
 }
 #banner {
-  background: url(img/bg1.jpg);
   background-size: cover;
-  background-position: center;
-  height: 100vh;
+  background-position: left;
+  height: 80vh;
+  position: relative;
+  background-repeat: no-repeat;
+
+  animation-name: changeBG;
+  animation-duration: 60s;
+  animation-timing-function: ease-in-out;
+  animation-delay: none;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+
+@keyframes changeBG {
+  0% {
+    background: url(img/bg1.jpg);
+  }
+  20% {
+    background-image: url(img/background.jpg);
+  }
+  40% {
+    background-image: url(img/Nutritional\ Products.jpg);
+  }
+  60% {
+    background-image: url(img/client2.jpg);
+  }
+  80% {
+    background-image: url(img/client.png);
+  }
+  100% {
+    background-image: url(img/logo.png);
+  }
+}
+
 .logo {
   width: 120px;
   position: absolute;
@@ -132,7 +163,7 @@
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
+  fill: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear 1;
@@ -185,10 +216,6 @@
   nav ul li a {
     text-decoration: none;
     color: #fff;
-  }
-  .banner-btn > a {
-    background-color: black;
-    color: white;
   }
 }
 
