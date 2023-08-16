@@ -92,7 +92,7 @@
   height: 50px;
   background: #009688;
   text-align: center;
-  position: fixed;
+  position: absolute;
   right: 30px;
   top: 20px;
   border-radius: 3px;
@@ -347,4 +347,26 @@ hr {
     opacity: 1;
   }
   /*---------footer---------*/
+}
+.why-us {
+  transform: scale(0);
+}
+
+.inScreen {
+  transition: 400ms linear;
+  animation-name: slidein;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: none;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
