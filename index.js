@@ -14,5 +14,3 @@ function createObserver(itemClassName, animationClassName) {
     observer.observe(ele)
   })
 }
-
-module.exports = createObserver

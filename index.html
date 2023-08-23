@@ -16,12 +16,18 @@
                 crossorigin="anonymous"></script>
         <script src="./index.js" defer>
 
+
         </script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
 
     </head>
 
     <body onload="createObserver('why-us','inScreen')">
-        <div id="sideNav">
+        <div id="sideNav" style="z-index: 100;">
             <img src="img/Cluck new.png" class="logo logo1" height="120px" width="120px">
             <nav>
 
@@ -36,31 +42,56 @@
                 </ul>
             </nav>
         </div>
-        <section id="banner">
+        <section class="banner" style="z-index: -1;">
+
+            <div id="carouselExampleControls" data-bs-ride="carousel" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="img/cover/img6.jpg" class="d-block w-100" alt="Camera" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/cover/img7.jpg" class="d-block w-100" alt="Exotic Fruits" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/cover/img8.jpg" class="d-block w-100" alt="Exotic Fruits" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/cover/img9.jpg" class="d-block w-100" alt="Exotic Fruits" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/cover/img10.jpg" class="d-block w-100" alt="Exotic Fruits" />
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/cover/img11.jpg" class="d-block w-100" alt="Exotic Fruits" />
+                    </div>
+                </div>
+
+            </div>
+
             <img src="img/Cluck new.png" class=" logo logo2" width="150px">
-            <!-- <div class="img-box">
-                <img src="./img/bg1.jpg" alt="bg">
-            </div> -->
+
             <div class="banner-text">
-                <h1 class="animate-charcter">Agricultural Cooparative</h1>
+                <!-- <h1 class="animate-charcter">Agricultural</h1> -->
+                <div class="title w-75 mx-auto ">
+                    <h1>Agricultural</h1>
+                    <h2 class="mt-0 pt-0">Cooparative</h2>
+                </div>
                 <p>
                     Animal health is our responsibilty
                 </p>
-                <div class="banner-btn">
-                    <a href="#"> Out</a>
-                    <a href="#"> More</a>
-                </div>
+
             </div>
 
         </section>
 
-        <div id="menuBtn">
+        <div id="menuBtn" style="z-index: 200;">
             <img src="img/menu1.jpg" id="menu">
         </div>
 
         <!----------------Features----------->
 
-        <section>
+        <section class="container mt-lg-5">
             <div class="title-text">
                 <h1>Welcome to CLUCK PVT LTD</h1>
                 <p>Why choose Us</p>
@@ -127,7 +158,7 @@
 
         </section>
         <!--------------Service--------------->
-        <section id="service">
+        <section id="service" data-aos="fade-up">
             <div class="title-text">
                 <h1>Our products</h1>
                 <p>We provide better</p>
@@ -388,6 +419,10 @@
 
                 }
             }
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
         </script>
     </body>
 
