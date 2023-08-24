@@ -1,0 +1,34 @@
+.title-header {
+  font-weight: bold;
+}
+
+li > a {
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: black;
+  transition: color 250ms ease-in;
+}
+
+li > a:hover {
+  color: #009588;
+  border-bottom: 2px solid #009588;
+  padding-bottom: 2px;
+}
+
+.first {
+  margin-left: 5em;
+}
+
+.dropdown-box {
+  position: absolute;
+  right: 1rem;
+  top: 60px;
+  background-color: rgba(192, 192, 192, 0.4);
+}
+
+.active-link {
+  color: #009588;
+  border-bottom: 2px solid #009588;
+  padding-bottom: 2px;
+}

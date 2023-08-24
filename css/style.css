@@ -30,7 +30,7 @@
   width: 100px;
   position: absolute;
   left: 5%;
-
+  top: 5px;
   z-index: 200;
 }
 .banner-text {
@@ -99,13 +99,13 @@
     right: 0;
     top: 0;
   }
-  .logo2 {
+  /* .logo2 {
     display: none;
   }
   .logo1 {
     display: block;
     top: 10px;
-  }
+  } */
   #sideNav > nav {
     margin-left: 4rem;
     z-index: 1000;
@@ -144,11 +144,12 @@
     font-size: 3rem;
     text-align: right;
   }
-  .LOGO2 {
+  /* .logo2 {
     width: 90px;
     height: 90px;
     margin-top: 10px;
-  }
+    background-color: red;
+  } */
 
   .banner-btn a {
     display: block;
