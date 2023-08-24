@@ -18,8 +18,30 @@
   </head>
 
   <body>
+
+    <style>
+      @media all and (min-width:900px) {
+        li>a {
+          color: black !important;
+        }
+
+        .active {
+          border-bottom: 2px solid #009688;
+          padding-bottom: 5px;
+          color: #009688 !important;
+          font-weight: 800;
+        }
+
+        li>a:hover {
+          color: #009688 !important;
+        }
+
+
+
+      }
+    </style>
     <img src="../img/Cluck new.png" class="logo" height="100px" width="120px">
-    <div id="sideNav" style="background-color:black ;">
+    <div id="sideNav">
 
       <nav>
 
@@ -56,9 +78,24 @@
       .go-btn:focus {
         box-shadow: none;
       }
+
+      .nav-box {
+        margin-top: 6em;
+      }
+
+      @media all and (min-width:800px) {
+        .nav-box {
+          margin-top: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+      }
     </style>
 
-    <div class="container p-5 " style="margin-top: 6em;">
+    <div class="container p-5 nav-box">
       <div class="row">
         <div class="col-11 col-md-4 mx-auto my-4 my-md-0">
 
