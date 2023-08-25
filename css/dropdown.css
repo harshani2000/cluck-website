@@ -24,7 +24,6 @@ li > a:hover {
   position: absolute;
   right: 1rem;
   top: 60px;
-  background-color: rgba(192, 192, 192, 0.4);
 }
 
 .active-link {

@@ -248,6 +248,7 @@
   justify-content: space-around;
   margin: auto;
 }
+
 .single-service {
   flex-basis: 48%;
   text-align: center;
